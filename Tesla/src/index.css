@@ -1,0 +1,173 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  color : #393c41;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* Active le défilement fluide pour toute la page */
+}
+
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header{
+  width: 100%;
+  min-height: 60px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.burger-nav{
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  width: 300px;
+  z-index: 10;
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.burger-nav li{
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0,0,0, .2);
+  font-weight: 600;
+}
+
+.burger-nav li a{
+  
+}
+
+.burger-nav svg{
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+header a{
+}
+
+nav{  
+  
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+ul li{
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+div.home-container{
+  height: 100vh;
+  
+}
+
+.right-menu{
+  display: flex;
+  align-items: center;
+}
+
+.right-menu svg{
+  cursor: pointer;
+}
+
+.right-menu a{
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 10px;
+
+}
+
+div.wrap{
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.wrap div.item-text{
+  padding-top: 15vh;
+  text-align: center;
+}
+
+div.wrap div.button-group{
+  display: flex;
+  margin-bottom: 30px;
+
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column; /* Passer en colonne quand l'écran est plus petit que 768px */
+  }
+  nav.menu{
+    display: none;
+  }
+}
+
+button{
+  cursor: pointer;
+  margin: 8px;
+  border: 0px;
+
+}
+
+div.buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.button-group button.left-button{
+  background-color: black;
+  height: 40px;
+  width: 256px;
+  color: white;
+  border-radius: 100px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+div.button-group button.right-button{
+  background: white;
+  height: 40px;
+  width: 256px;
+  color: black;
+  border-radius: 100px;
+  opacity: 0.65;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+img.down-arrow{
+  margin-top: 20px;
+  height: 40px;
+}
